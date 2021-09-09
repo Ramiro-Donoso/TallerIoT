@@ -1,7 +1,7 @@
 all:
 	g++ -c lib/system.cpp -o lib/bin/system.o 
 	g++ -c main.cpp -o main.o 
-	g++ lib/bin/*.o main.o -o main -lwiringPi -lpthread
+	g++ lib/bin/*.o main.o -o main -lpthread
 clean:
 	rm main.o lib/bin/*.o
 run:
